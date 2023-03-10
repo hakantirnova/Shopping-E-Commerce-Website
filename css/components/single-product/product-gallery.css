@@ -1,0 +1,62 @@
+.single-product .product-gallery {
+  width: 50%;
+}
+
+.single-product .single-image-wrapper { /* 171.Bölüm */
+  overflow: hidden;                     /* 172.Bölüm */
+  display: flex;                        /* 173.Bölüm 174.Bölüm için zoom.js'e git */
+}
+
+.single-product .single-image-wrapper img {
+  width: 100%;
+  height: 100%;               /* 168.Bölüm */
+  object-fit: cover;          /* 169.Bölüm */
+  transform-origin: center;   /* 170.Bölüm */
+}
+
+.single-product .single-image-wrapper img:hover {
+  cursor: zoom-in;
+}
+
+.single-product .gallery-thumbs {
+  /* display: flex;   135.Bölüm'de bu kaldırıldı        
+  column-gap: 10px; */
+}
+
+.single-product .gallery-thumbs li {
+  cursor: pointer;
+  display: flex;
+}
+
+.single-product .gallery-thumbs li img {
+  border: 1px solid transparent;
+}
+
+.single-product .gallery-thumbs li img.active {
+  border-color:#000;
+}
+
+.single-product .gallery-thumbs li img:hover {
+  border-color:#000;
+}
+
+.single-product .product-thumb {  /* 135.Bölüm */
+  position: relative;
+  margin-top: 7px;
+}
+
+.single-product .glide__arrow {   /* 136.Bölüm */
+  position: absolute; 
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  font-size: 25px;
+}
+
+.single-product .glide__arrow--left {  /* 137.Bölüm */
+  left: 0;
+}
+
+.single-product .glide__arrow--right {   /* 138.Bölüm 139.Bölüm için js'de yeni bir klasör aç ve thumbsActive.js dosyasına geç */
+  right: 0;
+}
